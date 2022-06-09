@@ -1,6 +1,6 @@
 <?php
 
-use Blazervel\Blazervel\Fortify\Controllers\{
+use Blazervel\Auth\Fortify\Controllers\{
     AuthenticatedSessionController,
     ConfirmablePasswordController,
     EmailVerificationNotificationController,

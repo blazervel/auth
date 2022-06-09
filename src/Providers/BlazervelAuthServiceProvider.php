@@ -8,16 +8,13 @@ use Blazervel\Auth\Fortify\Actions\{
   UpdateUserPassword,
   UpdateUserProfileInformation
 };
+
 use Illuminate\Cache\RateLimiting\Limit;
 use Illuminate\Support\Facades\RateLimiter;
 use Illuminate\Http\Request;
 use Laravel\Fortify\Fortify;
 
-use Blazervel\Blazervel\View\TagCompiler;
-
-use Tightenco\Ziggy\BladeRouteGenerator;
-use Illuminate\Support\Facades\{ File, Blade, App, Lang };
-use Illuminate\Support\{ Str, ServiceProvider };
+use Illuminate\Support\ServiceProvider;
 
 class BlazervelAuthServiceProvider extends ServiceProvider 
 {
