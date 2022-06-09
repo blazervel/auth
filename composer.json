@@ -11,7 +11,7 @@
   "require": {
       "php": "^8.0",
       "illuminate/support": "^8.67|^9.0",
-      "blazervel/blazervel": "0.0.x-dev",
+      "blazervel/blazervel": "dev-master",
       "laravel/fortify": "^1.13"
   },
   "require-dev": {
