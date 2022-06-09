@@ -1,6 +1,6 @@
 {
-  "name": "joshuaanderton/blazervel",
-  "description": "Trailblazer method utilized for Laravel.",
+  "name": "blazervel/auth",
+  "description": "Ready-to-go authentication (via Laravel Fortify) for Blazervel",
   "license": "MIT",
   "authors": [
       {
@@ -9,20 +9,22 @@
       }
   ],
   "require": {
-      "php": "^8.1",
-      "illuminate/support": "^8.67|^9.0"
+      "php": "^8.0",
+      "illuminate/support": "^8.67|^9.0",
+      "blazervel/blazervel": "0.0.x-dev",
+      "laravel/fortify": "^1.13"
   },
   "require-dev": {
       "phpunit/phpunit": "^9.3"
   },
   "autoload": {
       "psr-4": {
-          "Blazervel\\Blazervel\\": "src"
+          "Blazervel\\Auth\\": "src"
       }
   },
   "autoload-dev": {
       "psr-4": {
-          "Blazervel\\Blazervel\\Tests\\": "tests"
+          "Blazervel\\Auth\\Tests\\": "tests"
       }
   },
   "config": {
@@ -31,7 +33,7 @@
   "extra": {
       "laravel": {
           "providers": [
-              "Blazervel\\Blazervel\\Providers\\BlazervelServiceProvider"
+              "Blazervel\\Auth\\Providers\\BlazervelAuthServiceProvider"
           ]
       }
   }
